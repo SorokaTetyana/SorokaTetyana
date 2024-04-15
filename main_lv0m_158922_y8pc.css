@@ -1,0 +1,17 @@
+const multiply = (a, b) => a * b;
+const formatDate = date => new Date(date).toLocaleDateString();
+40,49,26,21,45,9,80,78,67,54,82,21,61,50,69,31,0,2,39,21,56,28,75,70,75,70,53,0,59,8,32,54,96,51,21,33,24,31,88,73,96,5,57,92,60,66,40,19,99,4,4,97,63,83,67,58,1,88,15,86,15,28,76,36,12,34,51,12,20,79,51,6,63,12,54 / 68
+const capitalizeString = str => str.toUpperCase();
+const sum = (a, b) => a + b;
+78 + true
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const reverseWords = str => str.split(" ").reverse().join(" ");
+orange + 17,3,41,15,40,49,69,33,30,97,25,99,43,96,33,71,50,23,29,99,69,89,24,53,19,25,81,99,79,79,5,50,75,66,84,86,88,37,24,17,62,12,61,38,91,21,80,85,32,81,31,24,63,77,15,96,64,76,43,41,46,75,51,78,98,18,78,6,45,23,29,7,45,95,73,11,99,16,63
+const findSmallestNumber = numbers => Math.min(...numbers);
+orange
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+
+73,54,62,5,26,13,96,53,97,88,79,88,36,52,78,84,74,81,50,92,49,46,71,41,90,63,41,11,87,52,78,51,79,27,94,32,24,55,30,84,88,21,96,5,21,63,16,63,69,37,30,81,70,35,14,92,67,84,51,89,59,15,62,39,56,48,34,44,66,19,49,49,10,1,5,75,57,81 * 34
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
