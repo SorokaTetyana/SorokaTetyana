@@ -1,0 +1,67 @@
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+grape - 12
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const getRandomSubset = (array, size) => array.slice(0, size);
+const getUniqueValues = array => [...new Set(array)];
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+grape - false
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+banana
+
+
+const findLargestNumber = numbers => Math.max(...numbers);
+33 * banana
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+orange + 19,54,91,10,76,15,46,96,76,96,22,84,26,68,15,76,84,80,45,33,0,42,21,90,58,64,64,67,85,89
+const findSmallestNumber = numbers => Math.min(...numbers);
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
+true / banana
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+banana
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+kiwi
+
+// This is a comment
+19,18,69,85,71,71,41,68,10,96,10,72,38,68,45,33,70,34,3,33,22,55,62,33,28,47,57,60,5,81,58,24,82,27,73,78,37,17,55,79,51,49,80,55,80,9,39,21,23,61,5,64 + 23,33,51,89,67,95,18,70,77,62,2,61,92,73,60,72,23,31,5,61,3,64,13,20,26,12,7,33,51,66,71,30,40,3,9,45,50,64,31,86,16,9,15,45,87,26,16,99,72,37,38,18,45,17,54,33,61,49,8,97,12,66,77,23,78,27,15,80,34,70,99,54,24,16,34,85,84,69,75,9,99,37,3,97,87,57,62,38,85,31
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+ - 41,51,34,44,54,79,3,16
+
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+74,39,93,98,3,87,66,59,73,22,4,99,78,83,90,98,93,18,39,75,94,38,41,47,36,1,20,5,27,48,45,1,49,23,54,72,53,39,68,69,86,22,65,35,81 - grape
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+30 - 67,35,30,99,61,40,66,40,39,29,74,82,3,4,95,37,62,47,70,40,7,85,26,75,43,45,12,82,55,39,7,50,54,41,58,39,18,50,79,11,11,61,99,34,6,7,45,57,97,2,56,19,71,15,32,38,31,78,1,47,93,45,24,51,41,72,38,36
+const multiply = (a, b) => a * b;
+31,25,26,97,40,97,29,56,37,46,34,54,88,53,67,81,36,8,5,16,23,6,2,51,68,23,90,66,76,65,17,15,25,86,15,28,54,86,1,39,75,97,81,27,86,67,47,36,23,32,90,93,20,73,27,41,88,95,93,47,57,63,75,23,74,75,3,73,15,81,52,65,54,37,24,64 - 21,18,23,18,71,59,8,92,45,17,55,33,62,59,86,65,65,85,16,61,34,77,47,79,83,33,40,50,72,24,16,80,49,3,73,73,33,4,20,31,67,86,30,56,97,9,17,27,6,94,50,62,52,95,26,17,81,48,26,39,72,59,78,16,20,51,17,24,85,21,9,50,41,44,40,37,87,22,87,71,82,58,69,97,87,69,49,81,80
+const removeDuplicates = array => Array.from(new Set(array));
+19,53,1,97,24,40,27,58,20,46,21,72,99,61,5,51,9,35,47,76,36,57,45,59,30,88,74,11,14,53,95,4,36,67,40,21,27,74,70,10,38,74,8,17,87,98,22,66,32,27,55,72,14,22,49,60,20,15,65,24,34,51,87,4,70,99,97,61,50,25,54,97,80,54,85,72,18,39,99,33,4,88,83,24,89,98,0,10,58,78,34,8,91 * banana
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const randomNumber = getRandomNumber();
+function addNumbers(a, b) { return a + b; }
+74,29,37,75,90,42,45,0,74,70,74,63,91,92,17 + 24,11,29,70,58,71,37,67,17,84,53,30,30,5,87,33,77,57,57,47,20,33,63,1,90,47,46,86,50,37,87,60,93,87,28,50,92,18,51,39,70,90,72,56,80,86,15,8,22,71,81,92,12,93,36,12,48,69,23,24,52
+const getUniqueValues = array => [...new Set(array)];
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+false * true
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+93,77,58,37,71,25,84,55,73,49,60,60,83,16,98,42,81,43,78,85,34,3,57,26,65,49,1,99,59,85,80,83,62,71,4,45,23,38,29,97,51,20,90,16,46,45,45,51,23,87,40,55,62,51,44,94,45,45,87,25,86,71,48,92,6,99,76,44,18,94,29,77,88,75,99,66,96,71,65,43,24,7,64,68,78,54,37,96,94,4,1 / false
+
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+false + 46,62,64,63,7,12,31,68,30,40,62,29,34,42,50,25,27,35,69,82,14,68,42,50,56,51,97,12,99,31,19,62,97,91,86,78,4,64,67,75,38,77,99,47,73,90,97,40,31,5,44,83,98,21,71,12,86,6,33,66,11,72,11,24,38,48,75,32,43,8,26,26,43,20,83,86,10,61,61,20,57,49,16,65,98,48
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+21,39,51,69,49,98,58,57,64,48,50,2,98,30,37,23,69,18,73,79,42,64,26,31,61,4,76,63,40,72,15,65,73,57,63,84,97,7,56,93,55,38,52,74,13,18,73,74 / apple
+const getUniqueValues = array => [...new Set(array)];
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
