@@ -1,0 +1,49 @@
+27 / 25,24,96,90,57,13,15,26,76,46,18,9,19,22,38,35,62,2
+let array = getRandomArray(); array.forEach(item => console.log(item));
+kiwi
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const sum = (a, b) => a + b;
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+
+false - false
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+banana
+
+// This is a comment
+apple / true
+const isEven = num => num % 2 === 0;
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+kiwi
+
+class MyClass { constructor() { this.property = getRandomString(); } }
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+true / orange
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+orange * 3
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const randomNumber = getRandomNumber();
+false / orange
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+true / 51,62,81,55,12,5,33,10
+const randomNumber = getRandomNumber();
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const formatDate = date => new Date(date).toLocaleDateString();
+orange
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const formatDate = date => new Date(date).toLocaleDateString();
+true + banana
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+
